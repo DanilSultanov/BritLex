@@ -280,7 +280,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #222;
+  background-color: #263238c1;
   z-index: 100;
 }
 
@@ -298,7 +298,8 @@ body {
   border: none;
   background: transparent;
   font-size: 50px;
-  margin-left: 90%;
+  margin-left: 83%;
+  top: 0;
 }
 
 .overlay {
@@ -327,11 +328,21 @@ body {
     margin-bottom: 10%;
 }
 
+.hidden-site-nav-link:hover{
+  opacity: 0.8;
+}
+
+.hidden-site-nav-link:active{
+  opacity: 0.6;
+  margin: 8px;
+}
+
 .hidden-btn {
+    background: rgba(0, 0, 0, 0.475);
     margin-top: 10px;
     margin-left: 10px;
-    color: black;
-    border: 2px solid black;
+    color: white;
+    border: 2px solid white;
     padding: 15px 15px;
     border-radius: 5px;
     font-size: 15px;
@@ -439,5 +450,9 @@ body {
 
   .footer-hr {
     width: 100%;
+  }
+  .footer-conainer{
+    display: flex;
+    flex-direction: column;
   }
 }
